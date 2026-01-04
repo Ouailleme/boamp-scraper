@@ -5,6 +5,7 @@
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Tests](https://github.com/Ouailleme/boamp-scraper/actions/workflows/tests.yml/badge.svg)](https://github.com/Ouailleme/boamp-scraper/actions/workflows/tests.yml)
+[![Coverage](https://img.shields.io/badge/coverage-79%25-brightgreen.svg)](https://github.com/Ouailleme/boamp-scraper)
 [![GitHub stars](https://img.shields.io/github/stars/Ouailleme/boamp-scraper?style=social)](https://github.com/Ouailleme/boamp-scraper)
 [![GitHub forks](https://img.shields.io/github/forks/Ouailleme/boamp-scraper?style=social)](https://github.com/Ouailleme/boamp-scraper)
 [![GitHub issues](https://img.shields.io/github/issues/Ouailleme/boamp-scraper)](https://github.com/Ouailleme/boamp-scraper/issues)
