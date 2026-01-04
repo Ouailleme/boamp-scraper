@@ -39,8 +39,10 @@ That's it! 🎉
 - ✅ **Async-first** - Built with asyncio for performance
 - ✅ **Type-safe** - Full Pydantic v2 models
 - ✅ **Filters** - Keywords, budget, region, category
-- ✅ **Free tier** - 50 API calls/month (no credit card)
-- ✅ **Premium** - Unlimited calls + AI analysis ($500/mo)
+- ✅ **Rate Limiting** - Be respectful to BOAMP servers (10 req/min default)
+- ✅ **Caching** - Avoid re-scraping with built-in file cache (configurable TTL)
+- ✅ **CLI Tool** - Use from command line (`python -m boamp search "cloud"`)
+- ✅ **Real Scraping** - No mock data, real BOAMP.fr results
 
 ---
 
