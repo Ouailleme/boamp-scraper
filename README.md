@@ -68,6 +68,7 @@ That's it! 🎉
 - [Quick Start Guide (5 min)](docs/QUICK_START.md)
 
 ### Guides
+- [CLI Guide](docs/CLI_GUIDE.md)
 - [Advanced Usage](#advanced-usage)
 - [Use Cases (10 examples)](docs/USE_CASES.md)
 - [API Reference](docs/API_REFERENCE.md)
@@ -99,7 +100,34 @@ pip install -e .
 
 ---
 
-## 💻 Usage Examples
+## 💻 Usage
+
+### Command Line (CLI)
+
+Quick usage from terminal:
+
+```bash
+# Search for tenders
+python -m boamp search "cloud" --limit 10
+
+# Filter by budget and category
+python -m boamp search "cloud" \
+  --category CLOUD_INFRASTRUCTURE \
+  --budget-min 100000 \
+  --limit 20
+
+# Export to CSV
+python -m boamp search "cybersécurité" --output tenders.csv
+
+# Get version
+python -m boamp version
+```
+
+**📖 Full CLI Guide:** [docs/CLI_GUIDE.md](docs/CLI_GUIDE.md)
+
+---
+
+### Python Library
 
 We provide 3 complete examples in the `examples/` directory:
 
