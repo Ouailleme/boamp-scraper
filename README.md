@@ -97,7 +97,7 @@ pip install boamp-scraper
 ### From Source
 
 ```bash
-git clone https://github.com/tenderkit/boamp-scraper.git
+git clone https://github.com/TenderKit-dev/boamp-scraper.git
 cd boamp-scraper
 pip install -e .
 ```
@@ -253,10 +253,10 @@ MIT © TenderKit
 ## 🔗 Links
 
 - **Website:** https://boamp-scraper.com (Coming soon)
-- **GitHub:** https://github.com/tenderkit/boamp-scraper
+- **GitHub:** https://github.com/TenderKit-dev/boamp-scraper
 - **PyPI:** https://pypi.org/project/boamp-scraper (Coming soon)
-- **Issues:** https://github.com/tenderkit/boamp-scraper/issues
-- **Discussions:** https://github.com/tenderkit/boamp-scraper/discussions
+- **Issues:** https://github.com/TenderKit-dev/boamp-scraper/issues
+- **Discussions:** https://github.com/TenderKit-dev/boamp-scraper/discussions
 
 ---
 

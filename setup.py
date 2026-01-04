@@ -18,11 +18,11 @@ setup(
     description="Scrape French public tenders (BOAMP) in 3 lines of Python",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/tenderkit/boamp-scraper",
+    url="https://github.com/TenderKit-dev/boamp-scraper",
     project_urls={
-        "Bug Tracker": "https://github.com/tenderkit/boamp-scraper/issues",
-        "Documentation": "https://github.com/tenderkit/boamp-scraper#readme",
-        "Source Code": "https://github.com/tenderkit/boamp-scraper",
+        "Bug Tracker": "https://github.com/TenderKit-dev/boamp-scraper/issues",
+        "Documentation": "https://github.com/TenderKit-dev/boamp-scraper#readme",
+        "Source Code": "https://github.com/TenderKit-dev/boamp-scraper",
     },
     packages=find_packages(exclude=["tests", "tests.*"]),
     classifiers=[

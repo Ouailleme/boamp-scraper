@@ -18,7 +18,7 @@
 
 ### **3. URLs GitHub**
 - **AVANT:** github.com/algora/boamp-scraper
-- **APRÈS:** github.com/tenderkit/boamp-scraper
+- **APRÈS:** github.com/TenderKit-dev/boamp-scraper
 
 ### **4. Copyright**
 - **AVANT:** © Algora
@@ -100,7 +100,7 @@ Ces mentions font référence à **Algora.io** (la plateforme de bounties), **PA
 - **GitHub:** @Ouailleme
 
 ### **Projet**
-- **Repo:** github.com/tenderkit/boamp-scraper ⚠️ (à créer/transférer)
+- **Repo:** github.com/TenderKit-dev/boamp-scraper ✅ (transféré !)
 - **PyPI:** pypi.org/project/boamp-scraper (nom du package inchangé)
 
 ---
@@ -111,15 +111,14 @@ Ces mentions font référence à **Algora.io** (la plateforme de bounties), **PA
 - `https://github.com/Ouailleme/boamp-scraper`
 
 **Les docs pointent maintenant vers :**
-- `https://github.com/tenderkit/boamp-scraper`
+- `https://github.com/TenderKit-dev/boamp-scraper`
 
-### **OPTIONS :**
+### **✅ FAIT !**
 
-#### **Option A : Créer organisation GitHub "TenderKit"**
-1. Va sur GitHub
-2. Créé une organisation "TenderKit"
-3. Transfert le repo `boamp-scraper` vers l'organisation
-4. L'URL deviendra automatiquement `github.com/tenderkit/boamp-scraper`
+#### **✅ Organisation "TenderKit-dev" créée**
+- Organisation créée sur GitHub
+- Repo transféré vers l'organisation
+- URL maintenant : `github.com/TenderKit-dev/boamp-scraper`
 
 #### **Option B : Garder ton compte perso**
 1. Ne rien faire
