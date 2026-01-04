@@ -145,8 +145,8 @@ class TenderScraper:
             # Give Angular time to load data and render
             await asyncio.sleep(5)
             
-            # Wait directly for tender cards to appear (simpler approach)
-            await page.wait_for_selector(".card-notification", state="visible", timeout=25000)
+            # Wait for tender cards to be in DOM (they exist but may not be "visible" per CSS)
+            await page.wait_for_selector(".card-notification", state="attached", timeout=25000)
             
             # Give extra time for all cards to render
             await asyncio.sleep(2)
