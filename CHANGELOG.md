@@ -8,26 +8,48 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
-- Initial SDK structure with TenderScraper class
-- Pydantic v2 models (Tender, TenderCategory, SearchFilters)
-- Async and sync search support
-- Mock data for testing (real BOAMP scraping TODO)
-- 3 usage examples:
-  - basic.py: Basic search
-  - advanced_filters.py: Filtering by category and budget
-  - export_csv.py: Export to CSV with timestamp
-- Structured logging with timestamps
-- 8 unit tests with pytest
-- CONTRIBUTING.md with coding standards
-- GitHub Actions CI/CD workflow
-- Badges in README (Python version, License, GitHub stats, Code style)
+- **CLI Tool** - Command-line interface (`python -m boamp`)
+  - Search command with full filter support
+  - Multiple output formats (table, JSON, CSV)
+  - Export to file (--output)
+  - Version command
+- **Documentation (4,000+ lines total)**
+  - CLI Guide (700+ lines)
+  - API Reference (500+ lines)
+  - FAQ (600+ lines)
+  - Quick Start Guide (200+ lines)
+  - Use Cases (300+ lines)
+  - Launch Blog Post (1,500+ lines)
+- **Tests & Quality**
+  - +11 model tests (total: 19 tests)
+  - 79% code coverage
+  - Coverage reporting with pytest-cov
+  - Performance benchmarks (benchmarks/speed_test.py)
+- **Code Quality**
+  - Black formatter integration
+  - Ruff linter integration
+  - All code formatted (PEP 8 compliant)
+  - Zero linter warnings
+- **Community Standards**
+  - CODE_OF_CONDUCT.md
+  - SECURITY.md
+  - GitHub issue templates (bug, feature request)
+  - Pull request template
+  - AUTHORS.md
+- **Project Infrastructure**
+  - ROADMAP.md (12-week plan)
+  - PyPI preparation (MANIFEST.in, sdist built)
+  - Daily recap document (DAILY_RECAP_2026-01-04.md)
 
 ### Changed
-- README updated with complete usage examples
-- Logging improved with detailed search parameters
+- **Pydantic v2 Migration** - Migrated from `class Config` to `ConfigDict`
+- **README Enhanced** - Added CLI section, reorganized documentation links
+- **Logging Improved** - More structured and informative log messages
 
 ### Fixed
-- None yet
+- Bare except statements replaced with specific exceptions
+- Boolean comparison in tests (use `assert x` instead of `assert x == True`)
+- Pydantic v2 deprecation warnings resolved
 
 ## [0.1.0] - 2026-01-04
 
