@@ -59,3 +59,11 @@ Thumbs.db
 *.csv
 !examples/*.csv
 
+# Cache directory
+.cache/
+*.cache
+
+# BOAMP inspection outputs
+boamp_page_source.html
+boamp_screenshot.png
+
