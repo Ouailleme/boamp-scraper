@@ -4,7 +4,10 @@
 
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![PyPI version](https://badge.fury.io/py/boamp-scraper.svg)](https://badge.fury.io/py/boamp-scraper)
+[![GitHub stars](https://img.shields.io/github/stars/Ouailleme/boamp-scraper?style=social)](https://github.com/Ouailleme/boamp-scraper)
+[![GitHub forks](https://img.shields.io/github/forks/Ouailleme/boamp-scraper?style=social)](https://github.com/Ouailleme/boamp-scraper)
+[![GitHub issues](https://img.shields.io/github/issues/Ouailleme/boamp-scraper)](https://github.com/Ouailleme/boamp-scraper/issues)
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 
 ---
 
