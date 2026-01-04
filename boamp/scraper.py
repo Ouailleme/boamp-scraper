@@ -132,29 +132,97 @@ class TenderScraper:
         """Extract tender data from page"""
         tenders = []
         
-        try:
-            # Wait for tender elements (adjust selector based on BOAMP structure)
-            await page.wait_for_selector(".resultat-item, .result-item, article", timeout=10000)
-            
-            # Get tender elements
-            items = await page.query_selector_all(".resultat-item, .result-item, article")
-            
-            for item in items[:filters.limit]:
-                try:
-                    tender = await self._parse_tender_element(item)
-                    
-                    if tender and self._matches_filters(tender, filters):
-                        tenders.append(tender)
-                    
-                    if len(tenders) >= filters.limit:
-                        break
-                
-                except Exception as e:
-                    logger.debug(f"Error parsing tender: {e}")
-                    continue
+        # TODO: Fix real selectors for BOAMP (Week 1)
+        # For now, use mock data to test the flow
+        logger.warning("⚠️  Using MOCK DATA (real scraping TODO)")
         
-        except Exception as e:
-            logger.error(f"Error extracting tenders: {e}")
+        mock_tenders = [
+            {
+                "title": "Développement d'une plateforme Cloud Azure",
+                "organisme": "Ministère de l'Intérieur",
+                "budget": 250000,
+                "category": TenderCategory.CLOUD_INFRASTRUCTURE
+            },
+            {
+                "title": "Audit de cybersécurité et tests d'intrusion",
+                "organisme": "Région Île-de-France",
+                "budget": 180000,
+                "category": TenderCategory.CYBERSECURITY
+            },
+            {
+                "title": "Maintenance applicative Java / Spring Boot",
+                "organisme": "CHU de Paris",
+                "budget": 120000,
+                "category": TenderCategory.MAINTENANCE
+            },
+            {
+                "title": "Développement d'une application mobile iOS/Android",
+                "organisme": "Ville de Lyon",
+                "budget": 90000,
+                "category": TenderCategory.MOBILE
+            },
+            {
+                "title": "Migration infrastructure vers AWS",
+                "organisme": "Ministère de l'Éducation Nationale",
+                "budget": 300000,
+                "category": TenderCategory.CLOUD_INFRASTRUCTURE
+            },
+            {
+                "title": "Conseil en transformation digitale",
+                "organisme": "Région Normandie",
+                "budget": 150000,
+                "category": TenderCategory.CONSULTING
+            },
+            {
+                "title": "Développement site web institutionnel",
+                "organisme": "Ville de Marseille",
+                "budget": 75000,
+                "category": TenderCategory.WEB
+            },
+            {
+                "title": "Formation cybersécurité pour 50 agents",
+                "organisme": "Ministère de la Justice",
+                "budget": 100000,
+                "category": TenderCategory.CYBERSECURITY
+            },
+            {
+                "title": "Solution BI / Data Analytics",
+                "organisme": "Région Bretagne",
+                "budget": 200000,
+                "category": TenderCategory.BI_DATA
+            },
+            {
+                "title": "Support technique N2/N3 infrastructure",
+                "organisme": "CHU de Toulouse",
+                "budget": 110000,
+                "category": TenderCategory.MAINTENANCE
+            },
+        ]
+        
+        # Filter mock data by keywords
+        for mock in mock_tenders[:filters.limit]:
+            # Simple keyword matching
+            title_lower = mock["title"].lower()
+            if filters.keywords:
+                if not any(kw.lower() in title_lower for kw in filters.keywords):
+                    continue
+            
+            tender = Tender(
+                title=mock["title"],
+                organisme=mock["organisme"],
+                budget=mock["budget"],
+                date_publication=datetime.now(),
+                url=f"https://www.boamp.fr/avis/detail/mock-{mock['title'][:20].replace(' ', '-')}",
+                category=mock["category"],
+                region=None,
+                description=None
+            )
+            
+            if self._matches_filters(tender, filters):
+                tenders.append(tender)
+                
+                if len(tenders) >= filters.limit:
+                    break
         
         return tenders
     
