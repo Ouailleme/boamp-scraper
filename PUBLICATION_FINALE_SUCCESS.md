@@ -182,34 +182,6 @@ tenders = scraper.search(keywords=["cloud"], limit=10)
 
 ---
 
-## 💰 OBJECTIFS MRR (si GO)
-
-### Phase 1 (Mois 1-2)
-- **100 downloads** → Validation marché
-- **10 issues/questions** → Engagement réel
-- **20+ GitHub stars** → Crédibilité
-
-### Phase 2 (Mois 3-4)
-- **Version Premium** avec AI analysis
-- **1-3 early adopters** à 49€/mois
-- **150-450€ MRR**
-
-### Phase 3 (Mois 5-8)
-- **10 clients payants**
-- **500€ MRR**
-
-### Phase 4 (Mois 9-12)
-- **30-50 clients**
-- **1500-2500€ MRR**
-- **Break-even atteint**
-
-### Phase 5 (Année 2)
-- **100+ clients**
-- **5000€+ MRR**
-- **Objectif atteint ! 🎯**
-
----
-
 ## 🏆 ACHIEVEMENTS DÉBLOQUÉS
 
 - ✅ **"First Commit"** - Créé un repo GitHub

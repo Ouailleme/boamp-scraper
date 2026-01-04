@@ -67,3 +67,7 @@ Thumbs.db
 boamp_page_source.html
 boamp_screenshot.png
 
+# Private business files (NEVER COMMIT)
+BUSINESS_PLAN_PRIVATE.md
+*_PRIVATE.md
+

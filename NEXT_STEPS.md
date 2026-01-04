@@ -66,29 +66,22 @@
 
 ## 🎯 SI GO (Phase 2) - PROCHAINES ACTIONS
 
-### **Semaines 3-4 (Features Premium)**
+### **Semaines 3-4 (Advanced Features)**
 1. Ajouter AI analysis avec OpenAI
-2. Créer pricing page (49€/mois)
-3. Intégrer Stripe
-4. Setup Supabase pour users
+2. Améliorer la documentation
+3. Optimiser les performances
+4. Ajouter features demandées par la communauté
 
-### **Semaines 5-8 (Early Adopters)**
-1. Prospection directe (10 cibles)
-2. Premiers 1-3 clients payants
-3. Feedback + itération
-4. 150-450€ MRR
+### **Semaines 5-8 (Community Building)**
+1. Engagement avec les utilisateurs
+2. Amélioration continue basée sur feedback
+3. Stabilisation du produit
+4. Expansion de la documentation
 
-### **Mois 3-6 (Scaling)**
-1. Automatisation prospection
-2. 10 clients payants
-3. 500€ MRR
-4. Stabilisation produit
-
-### **Mois 7-12 (Break-even)**
-1. 30-50 clients
-2. 1500-2500€ MRR
-3. Break-even atteint
-4. Roadmap année 2
+### **Mois 3+**
+1. Développement de nouvelles features
+2. Expansion vers d'autres plateformes
+3. Optimisation continue
 
 ---
 
@@ -243,8 +236,8 @@ Would love your feedback!
 - Ex: US gov tenders (SAM.gov)
 
 ### **Option 4 : White-label**
-- Vendre solution aux agences
-- Licence annuelle 2-5k€
+- Proposer solution aux agences
+- Modèle de licence
 - Support inclus
 
 ---
